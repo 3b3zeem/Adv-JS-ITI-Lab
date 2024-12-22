@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Note Manage</h1>
+    <button id="addNoteButton" class="btn">Add Note</button>
+    <div class="notes-container" id="notesContainer"></div>
+
+    <div class="overlay" id="noteOverlay">
+        <div class="overlay-content">
+            <h2 id="overlayTitle">Add Note</h2>
+            <input type="text" id="noteTitle" placeholder="Title" />
+            <p class="error" id="titleError"></p>
+            <textarea id="noteContent" placeholder="Content"></textarea>
+            <p class="error" id="contentError"></p>
+            <button id="saveNoteButton">Save</button>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
